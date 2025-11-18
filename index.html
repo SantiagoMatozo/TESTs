@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Santiago Matozo — Proyectos</title>
+  <style>
+    :root {
+      --bg: #fff8f2;
+      --card: #fff3e8;
+      --accent: #006b59;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      font-family: "Arial", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #006b59;
+      text-align: center;
+      margin-bottom: 40px;
+      animation: slideDown 0.8s ease;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.25s, box-shadow 0.25s;
+      animation: popIn 0.6s ease;
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.9); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: white;
+      background: var(--accent);
+      padding: 12px 18px;
+      border-radius: 10px;
+      border: 2px solid;
+      display: inline-block;
+      margin-top: 12px;
+      transition: background 0.25s;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      background: #fff;
+      color: #006b59;
+      transition: all 0.5s;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Santiago Matozo — Proyectos</h1>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Simulador Sifón</h2>
+      <p>Simulador Fisico hecho con HTML, CSS y JavaScript.</p>
+      <a href="#" target="_blank">Ver Proyecto</a>
+    </div>
+
+    <div class="card">
+      <h2>Proyecto 2</h2>
+      <p>Descripción breve del proyecto.</p>
+      <a href="#" target="_blank">Ver Proyecto</a>
+    </div>
+
+    <div class="card">
+      <h2>Proyecto 3</h2>
+      <p>Descripción breve del proyecto.</p>
+      <a href="#" target="_blank">Ver Proyecto</a>
+    </div>
+
+    <div class="card">
+      <h2>Proyecto 4</h2>
+      <p>Descripción breve del proyecto.</p>
+      <a href="#" target="_blank">Ver Proyecto</a>
+    </div>
+  </div>
+
+  <footer>© 2025 — Santiago Matozo</footer>
+
+</body>
+</html>
